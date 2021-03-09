@@ -16,5 +16,6 @@ describe('TTest', () => {
 
   it('passes the a11y audit', async () => {
     await expect(element).shadowDom.to.be.accessible();
+    await expect(element).dom.to.equalSnapshot();
   });
 });
